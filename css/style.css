@@ -1,0 +1,117 @@
+* /*this would be a command that applies to everything within the page*/ {
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #0E1014;
+    color:#FFFFFF;
+    /*da pra colocar tambem aqui color: e colocr a cor que voce quer para todas as
+    palavras que estariam presente na pagina*/
+}
+
+
+.cor-branca{
+    color: #FFFFFF; 
+    /* se colocar class na frente de uma das secoes e colocar a 
+    coisa aqui definida, a cor naturalmente vai ser branca, ou de acordo com que 
+    foi definido. (em caso de codigos maiores*/
+}
+
+header img {
+    display: block;
+    margin: 75px 0 0 360px
+}
+
+h1{
+    font-size: 64px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.banner-celulares {
+    background: url("../img/glow.png") center / 80% 97% no-repeat;
+    width:792px;
+    height:446px;
+    margin: 0 auto;
+}
+
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 24px auto 0;
+    width: 792px;
+}
+
+h1 span{
+/*para poder espeificar o lugar e as palavas especificas pra poder ter cor
+diferente, basta colocar o nome da secao que voce quer que seja diferente*/
+    color: #9747FF
+}
+
+a{
+    color: #FFFFFF;   
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #9747FF;
+    width: 340px;
+    height: 66px;
+    display: block;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto ;
+    /*margin-top: 100px;
+    margin-right: 790px;
+    margin: 10px;
+    margin-left: 790px;*/
+}
+
+a:hover{
+    background-color: #8233E8;
+}
+
+@media (max-width: 768px) {
+    header img {
+        margin: 65px 0 0 60px;
+    }
+
+    p {
+        width: calc(100% - 32px);
+    }
+
+    .banner-celulares {
+        width: calc(100% - 32px);
+        max-width: 648px;
+        height: auto;
+    }
+
+    .banner-celulares img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    header img {
+        margin: 32px 0 0 16px;
+    }
+
+    h1 {
+        font-size: clamp(24px, 7vw, 28px);
+        width: calc(100% - 32px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
